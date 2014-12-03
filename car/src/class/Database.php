@@ -12,12 +12,12 @@ class Database {
 		$this->username = 'root';
 		$this->password = '1234';
 		$this->db = 'project';
-                $this->query('SET NAMES UTF8');
 		$this->connectDB();
 	}
 	
 	function query($StrQuery) {
 		//echo $StrQuery;//for debug
+		mysql_query( "set names 'utf8'" );
 		$result = mysql_query( $StrQuery );
 		return $result;
 	}
