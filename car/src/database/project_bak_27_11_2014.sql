@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `car` (
   `create_dt` datetime DEFAULT NULL,
   `update_dt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `car`
@@ -67,7 +67,7 @@ CREATE TABLE IF NOT EXISTS `carbrand` (
   `id` int(10) unsigned NOT NULL AUTO_INCREMENT,
   `name` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=5 ;
 
 --
 -- Dumping data for table `carbrand`
@@ -93,7 +93,7 @@ CREATE TABLE IF NOT EXISTS `carimages` (
   `create_dt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `CarImages_FKIndex1` (`car_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=19 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=19 ;
 
 --
 -- Dumping data for table `carimages`
@@ -132,7 +132,7 @@ CREATE TABLE IF NOT EXISTS `carmodel` (
   PRIMARY KEY (`id`),
   KEY `brand_id` (`brand_id`),
   KEY `brand_id_2` (`brand_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=14 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `carmodel`
@@ -168,7 +168,7 @@ CREATE TABLE IF NOT EXISTS `member` (
   `update_dt` datetime DEFAULT NULL,
   PRIMARY KEY (`id`),
   KEY `Member_FKIndex1` (`Role_id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 -- --------------------------------------------------------
 
@@ -181,7 +181,7 @@ CREATE TABLE IF NOT EXISTS `role` (
   `name` varchar(45) DEFAULT NULL,
   `detail` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 AUTO_INCREMENT=1 ;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
